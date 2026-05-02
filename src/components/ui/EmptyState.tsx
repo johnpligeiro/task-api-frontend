@@ -13,7 +13,7 @@ export function EmptyState({
   description,
   actionLabel,
   onAction,
-}: EmptyStateProps): JSX.Element {
+}: EmptyStateProps ) {
   return (
     <div className="flex flex-col items-center justify-center py-16 text-center">
       <div className="mb-4 rounded-full bg-gray-100 p-4">

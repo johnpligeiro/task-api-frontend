@@ -27,7 +27,7 @@ export function TaskFilters({
   priorityFilter,
   onStatusChange,
   onPriorityChange,
-}: TaskFiltersProps): JSX.Element {
+}: TaskFiltersProps ) {
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
       <select

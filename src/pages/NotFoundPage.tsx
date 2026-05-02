@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/Button";
 
-export function NotFoundPage(): JSX.Element {
+export function NotFoundPage( ) {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center text-center">
       <p className="text-6xl font-bold text-blue-600">404</p>

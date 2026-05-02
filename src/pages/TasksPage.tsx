@@ -8,7 +8,7 @@ import { TaskFilters } from "../components/tasks/TaskFilters";
 import { useTasks, useCreateTask } from "../hooks/useTasks";
 import type { TaskPriority, TaskRequest, TaskStatus } from "../types";
 
-export function TasksPage(): JSX.Element {
+export function TasksPage( ) {
   const [isCreateOpen, setIsCreateOpen] = useState(false);
   const [statusFilter, setStatusFilter] = useState<TaskStatus | "ALL">("ALL");
   const [priorityFilter, setPriorityFilter] = useState<TaskPriority | "ALL">(

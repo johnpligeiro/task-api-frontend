@@ -11,7 +11,7 @@ const sizeStyles = {
   lg: "h-8 w-8",
 };
 
-export function Spinner({ size = "md", className }: SpinnerProps): JSX.Element {
+export function Spinner({ size = "md", className }: SpinnerProps ) {
   return (
     <svg
       className={cn("animate-spin", sizeStyles[size], className)}

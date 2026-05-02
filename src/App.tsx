@@ -21,7 +21,7 @@ const queryClient = new QueryClient({
   },
 });
 
-export function App(): JSX.Element {
+export function App( ) {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>

@@ -15,7 +15,7 @@ const loginSchema = z.object({
 
 type LoginFormValues = z.infer<typeof loginSchema>;
 
-export function LoginPage(): JSX.Element {
+export function LoginPage( ) {
   const login = useLogin();
 
   const {

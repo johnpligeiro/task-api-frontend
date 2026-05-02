@@ -1,5 +1,4 @@
 import { TaskCard } from "./TaskCard";
-import { Spinner } from "../ui/Spinner";
 import { EmptyState } from "../ui/EmptyState";
 import type { Task } from "../../types";
 
@@ -10,7 +9,7 @@ interface TaskListProps {
   onCreateClick: () => void;
 }
 
-function TaskSkeleton(): JSX.Element {
+function TaskSkeleton( ) {
   return (
     <div className="rounded-xl border bg-white p-5 shadow-sm">
       <div className="mb-3 h-4 w-3/4 animate-pulse rounded bg-gray-200" />
@@ -29,7 +28,7 @@ export function TaskList({
   isLoading,
   isError,
   onCreateClick,
-}: TaskListProps): JSX.Element {
+}: TaskListProps ) {
   if (isLoading) {
     return (
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

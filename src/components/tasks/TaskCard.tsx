@@ -19,7 +19,7 @@ const statusOptions: Array<{ value: TaskStatus; label: string }> = [
   { value: "DONE", label: "Concluída" },
 ];
 
-export function TaskCard({ task }: TaskCardProps): JSX.Element {
+export function TaskCard({ task }: TaskCardProps ) {
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
 

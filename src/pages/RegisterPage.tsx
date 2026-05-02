@@ -24,7 +24,7 @@ const registerSchema = z
 
 type RegisterFormValues = z.infer<typeof registerSchema>;
 
-export function RegisterPage(): JSX.Element {
+export function RegisterPage( ) {
   const register_ = useRegister();
 
   const {

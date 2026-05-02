@@ -30,7 +30,7 @@ export function Badge({
   children,
   variant = "gray",
   className,
-}: BadgeProps): JSX.Element {
+}: BadgeProps ) {
   return (
     <span
       className={cn(
@@ -48,7 +48,7 @@ export function StatusBadge({
   status,
 }: {
   status: TaskStatus;
-}): JSX.Element {
+} ) {
   const map: Record<TaskStatus, { label: string; variant: BadgeVariant }> = {
     PENDING: { label: "Pendente", variant: "yellow" },
     IN_PROGRESS: { label: "Em andamento", variant: "blue" },
@@ -62,7 +62,7 @@ export function PriorityBadge({
   priority,
 }: {
   priority: TaskPriority;
-}): JSX.Element {
+} ) {
   const map: Record<TaskPriority, { label: string; variant: BadgeVariant }> = {
     LOW: { label: "Baixa", variant: "gray" },
     MEDIUM: { label: "Média", variant: "orange" },

@@ -41,7 +41,7 @@ export function TaskForm({
   isLoading,
   defaultValues,
   onCancel,
-}: TaskFormProps): JSX.Element {
+}: TaskFormProps ) {
   const {
     register,
     handleSubmit,

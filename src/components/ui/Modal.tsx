@@ -22,7 +22,7 @@ export function Modal({
   title,
   children,
   size = "md",
-}: ModalProps): JSX.Element | null {
+}: ModalProps ) {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

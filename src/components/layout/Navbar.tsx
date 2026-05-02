@@ -3,7 +3,7 @@ import { useAuthStore } from "../../store/authStore";
 import { useLogout } from "../../hooks/useAuth";
 import { Button } from "../ui/Button";
 
-export function Navbar(): JSX.Element {
+export function Navbar( ) {
   const user = useAuthStore((state) => state.user);
   const logout = useLogout();
 
